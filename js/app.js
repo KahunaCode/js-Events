@@ -6,15 +6,19 @@ The function will add the following content inside the paragraph with the id of 
 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
 
+one.addEventListener("click", moreContent)
 function moreContent(){
-	
+	more.innerHTML = bacon;
 }
 
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
-
+noMore.addEventListener("click", lessContent);
+function lessContent(){
+	less.innerHTML = ""
+}
 
 
 //3. Tacocat, The Original Palindrome King
@@ -32,9 +36,19 @@ function zoom(){
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
 
 
+var menuItems = ["fries", "McFish", "Flurry"]
+function valueMenu(){
+	var items = ""
+	for (var i = 0; i<menuItems.length; i++){
+		items += menuItems[i]
+		items += " "
+	}menu.innerHTML = items
+}
+
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
+
 
 
 
