@@ -49,6 +49,11 @@ function valueMenu(){
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
 
+function redFace(){
+	drink.style.color = "red";
+	drink.style.fontSize = "20px";
+}
+
 
 
 
